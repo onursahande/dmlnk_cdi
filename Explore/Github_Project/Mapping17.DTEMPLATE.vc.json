@@ -719,15 +719,7 @@
             "descending" : "false",
             "queryAll" : "false",
             "rowLimit" : 0,
-            "selectDistinct" : "false",
-            "filterConditions" : [
-              {
-                "fieldName" : "TCKN",
-                "filterValue" : "NULL",
-                "objectName" : "DG_DEMO/CUSTOMERS_MASTER",
-                "operator" : "EQUALS"
-              }
-            ]
+            "selectDistinct" : "false"
           }
         }
       },
@@ -1588,5 +1580,5 @@
       }
     ]
   },
-  "vcsExportTime" : "2025-09-15 21:47:26 TRT"
+  "vcsExportTime" : "2025-09-15 21:49:23 TRT"
 }
