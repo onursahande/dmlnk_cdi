@@ -1,0 +1,1592 @@
+{
+  "content" : {
+    "allowMaxFieldLength" : "false",
+    "bigIntConvertType" : "ONLY_BIGINT",
+    "documentType" : "MAPPING",
+    "name" : "Mapping17",
+    "specialCharacterSupport" : "false",
+    "links" : [
+      {
+        "link" : "joiner_CUSTOMERS_MASTER_PLSQL -> RecommendedDataMasking",
+        "groupLink" : "OutputGroup -> InputGroup"
+      },
+      {
+        "link" : "Source -> joiner_CUSTOMERS_MASTER_PLSQL",
+        "groupLink" : "DefaultGroup -> Detail"
+      },
+      {
+        "link" : "source_CUSTOMERS_MASTER_PLSQL -> joiner_CUSTOMERS_MASTER_PLSQL",
+        "groupLink" : "DefaultGroup -> Master"
+      },
+      {
+        "link" : "RecommendedDataMasking -> Target",
+        "groupLink" : "OutputGroup -> DefaultGroup"
+      }
+    ],
+    "transformations" : [
+      {
+        "createTime" : "2025-09-15T12:22:28.178Z",
+        "name" : "Source",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "CUSTOMER_ID"
+            },
+            "name" : "CUSTOMER_ID",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "MSISDN"
+            },
+            "name" : "MSISDN",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "IMSI"
+            },
+            "name" : "IMSI",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 15,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "IMEI"
+            },
+            "name" : "IMEI",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 18,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ICCID"
+            },
+            "name" : "ICCID",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 20,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "IP_ADDRESS"
+            },
+            "name" : "IP_ADDRESS",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 30,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "FIRST_NAME"
+            },
+            "name" : "FIRST_NAME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 150,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "LAST_NAME"
+            },
+            "name" : "LAST_NAME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 150,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "VERGI_NO"
+            },
+            "name" : "VERGI_NO",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ADDRESS"
+            },
+            "name" : "ADDRESS",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 768,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "CITY"
+            },
+            "name" : "CITY",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 168,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ZIP_CODE"
+            },
+            "name" : "ZIP_CODE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 24,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "COUNTRY"
+            },
+            "name" : "COUNTRY",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 168,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PHONE"
+            },
+            "name" : "PHONE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 48,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "EMAIL"
+            },
+            "name" : "EMAIL",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 168,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "STATUS"
+            },
+            "name" : "STATUS",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 24,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PERSONNEL_ID"
+            },
+            "name" : "PERSONNEL_ID",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "CREDIT_CARD"
+            },
+            "name" : "CREDIT_CARD",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 48,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "RECNO"
+            },
+            "name" : "RECNO",
+            "platformType" : {
+              "name" : "double"
+            },
+            "precision" : 15,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "CELL_PHONE"
+            },
+            "name" : "CELL_PHONE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 16,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "GENDER"
+            },
+            "name" : "GENDER",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PERSONNEL_NAME"
+            },
+            "name" : "PERSONNEL_NAME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 300,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "TCKN"
+            },
+            "name" : "TCKN",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "SMS_TASK"
+            },
+            "name" : "SMS_TASK",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 2048,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@0Sw3SLh6nUHiF4mwnzFrKS",
+          "connectionName" : "DG_DEMO",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "Oracle",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "DG_DEMO/CUSTOMERS_MASTER",
+            "dbSchema" : "DG_DEMO",
+            "label" : "CUSTOMERS_MASTER",
+            "objectName" : "CUSTOMERS_MASTER",
+            "path" : "DG_DEMO/CUSTOMERS_MASTER",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "CUSTOMER_ID",
+                "fieldType" : "CONNECTOR",
+                "label" : "CUSTOMER_ID",
+                "nativeName" : "CUSTOMER_ID",
+                "nativeType" : "decimal",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DG_DEMO/CUSTOMERS_MASTER"
+                  }
+                ]
+              },
+              {
+                "name" : "MSISDN",
+                "fieldType" : "CONNECTOR",
+                "label" : "MSISDN",
+                "nativeName" : "MSISDN",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DG_DEMO/CUSTOMERS_MASTER"
+                  }
+                ]
+              },
+              {
+                "name" : "IMSI",
+                "fieldType" : "CONNECTOR",
+                "label" : "IMSI",
+                "nativeName" : "IMSI",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 15,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DG_DEMO/CUSTOMERS_MASTER"
+                  }
+                ]
+              },
+              {
+                "name" : "IMEI",
+                "fieldType" : "CONNECTOR",
+                "label" : "IMEI",
+                "nativeName" : "IMEI",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 18,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DG_DEMO/CUSTOMERS_MASTER"
+                  }
+                ]
+              },
+              {
+                "name" : "ICCID",
+                "fieldType" : "CONNECTOR",
+                "label" : "ICCID",
+                "nativeName" : "ICCID",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 20,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DG_DEMO/CUSTOMERS_MASTER"
+                  }
+                ]
+              },
+              {
+                "name" : "IP_ADDRESS",
+                "fieldType" : "CONNECTOR",
+                "label" : "IP_ADDRESS",
+                "nativeName" : "IP_ADDRESS",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 30,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DG_DEMO/CUSTOMERS_MASTER"
+                  }
+                ]
+              },
+              {
+                "name" : "FIRST_NAME",
+                "fieldType" : "CONNECTOR",
+                "label" : "FIRST_NAME",
+                "nativeName" : "FIRST_NAME",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 150,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DG_DEMO/CUSTOMERS_MASTER"
+                  }
+                ]
+              },
+              {
+                "name" : "LAST_NAME",
+                "fieldType" : "CONNECTOR",
+                "label" : "LAST_NAME",
+                "nativeName" : "LAST_NAME",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 150,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DG_DEMO/CUSTOMERS_MASTER"
+                  }
+                ]
+              },
+              {
+                "name" : "VERGI_NO",
+                "fieldType" : "CONNECTOR",
+                "label" : "VERGI_NO",
+                "nativeName" : "VERGI_NO",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DG_DEMO/CUSTOMERS_MASTER"
+                  }
+                ]
+              },
+              {
+                "name" : "ADDRESS",
+                "fieldType" : "CONNECTOR",
+                "label" : "ADDRESS",
+                "nativeName" : "ADDRESS",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 768,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DG_DEMO/CUSTOMERS_MASTER"
+                  }
+                ]
+              },
+              {
+                "name" : "CITY",
+                "fieldType" : "CONNECTOR",
+                "label" : "CITY",
+                "nativeName" : "CITY",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 168,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DG_DEMO/CUSTOMERS_MASTER"
+                  }
+                ]
+              },
+              {
+                "name" : "ZIP_CODE",
+                "fieldType" : "CONNECTOR",
+                "label" : "ZIP_CODE",
+                "nativeName" : "ZIP_CODE",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 24,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DG_DEMO/CUSTOMERS_MASTER"
+                  }
+                ]
+              },
+              {
+                "name" : "COUNTRY",
+                "fieldType" : "CONNECTOR",
+                "label" : "COUNTRY",
+                "nativeName" : "COUNTRY",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 168,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DG_DEMO/CUSTOMERS_MASTER"
+                  }
+                ]
+              },
+              {
+                "name" : "PHONE",
+                "fieldType" : "CONNECTOR",
+                "label" : "PHONE",
+                "nativeName" : "PHONE",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 48,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DG_DEMO/CUSTOMERS_MASTER"
+                  }
+                ]
+              },
+              {
+                "name" : "EMAIL",
+                "fieldType" : "CONNECTOR",
+                "label" : "EMAIL",
+                "nativeName" : "EMAIL",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 168,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DG_DEMO/CUSTOMERS_MASTER"
+                  }
+                ]
+              },
+              {
+                "name" : "STATUS",
+                "fieldType" : "CONNECTOR",
+                "label" : "STATUS",
+                "nativeName" : "STATUS",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 24,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DG_DEMO/CUSTOMERS_MASTER"
+                  }
+                ]
+              },
+              {
+                "name" : "PERSONNEL_ID",
+                "fieldType" : "CONNECTOR",
+                "label" : "PERSONNEL_ID",
+                "nativeName" : "PERSONNEL_ID",
+                "nativeType" : "decimal",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DG_DEMO/CUSTOMERS_MASTER"
+                  }
+                ]
+              },
+              {
+                "name" : "CREDIT_CARD",
+                "fieldType" : "CONNECTOR",
+                "label" : "CREDIT_CARD",
+                "nativeName" : "CREDIT_CARD",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 48,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DG_DEMO/CUSTOMERS_MASTER"
+                  }
+                ]
+              },
+              {
+                "name" : "RECNO",
+                "fieldType" : "CONNECTOR",
+                "label" : "RECNO",
+                "nativeName" : "RECNO",
+                "nativeType" : "double",
+                "original" : "false",
+                "precision" : 15,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DG_DEMO/CUSTOMERS_MASTER"
+                  }
+                ]
+              },
+              {
+                "name" : "CELL_PHONE",
+                "fieldType" : "CONNECTOR",
+                "label" : "CELL_PHONE",
+                "nativeName" : "CELL_PHONE",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 16,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DG_DEMO/CUSTOMERS_MASTER"
+                  }
+                ]
+              },
+              {
+                "name" : "GENDER",
+                "fieldType" : "CONNECTOR",
+                "label" : "GENDER",
+                "nativeName" : "GENDER",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DG_DEMO/CUSTOMERS_MASTER"
+                  }
+                ]
+              },
+              {
+                "name" : "PERSONNEL_NAME",
+                "fieldType" : "CONNECTOR",
+                "label" : "PERSONNEL_NAME",
+                "nativeName" : "PERSONNEL_NAME",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 300,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DG_DEMO/CUSTOMERS_MASTER"
+                  }
+                ]
+              },
+              {
+                "name" : "TCKN",
+                "fieldType" : "CONNECTOR",
+                "label" : "TCKN",
+                "nativeName" : "TCKN",
+                "nativeType" : "decimal",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DG_DEMO/CUSTOMERS_MASTER"
+                  }
+                ]
+              },
+              {
+                "name" : "SMS_TASK",
+                "fieldType" : "CONNECTOR",
+                "label" : "SMS_TASK",
+                "nativeName" : "SMS_TASK",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 2048,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "DG_DEMO/CUSTOMERS_MASTER"
+                  }
+                ]
+              }
+            ]
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false",
+            "filterConditions" : [
+              {
+                "fieldName" : "TCKN",
+                "filterValue" : "NULL",
+                "objectName" : "DG_DEMO/CUSTOMERS_MASTER",
+                "operator" : "EQUALS"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "createTime" : "2025-09-15T12:22:28.182Z",
+        "name" : "Target",
+        "advancedProperties" : [
+          {
+            "name" : "Forward Rejected Rows",
+            "value" : "true"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "createTarget" : "true",
+        "fieldMappingMode" : "BY_NAME",
+        "inputSorted" : "false",
+        "schemaProviderType" : "SELECTED_OBJECT",
+        "targetFieldsOrdered" : "false",
+        "updateColumns" : null,
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "dataAdapter" : {
+          "connectionId" : "saas:@0Sw3SLh6nUHiF4mwnzFrKS",
+          "connectionName" : "DG_DEMO",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "Oracle",
+          "useDynamicFileName" : "false",
+          "bulkOptions" : {
+            "hardDelete" : "false",
+            "maxRowsPerRequest" : 0,
+            "monitorBulk" : "false",
+            "monitorBulkV2" : "false",
+            "pkChunkingEnabled" : "false",
+            "pkChunkingSize" : 0,
+            "serialMode" : "false",
+            "useBulkApi" : "false",
+            "useBulkApiV2" : "false"
+          },
+          "object" : {
+            "name" : "TEST_ORA_TABLE",
+            "label" : "TEST_ORA_TABLE",
+            "path" : "TEST_ORA_TABLE",
+            "retainMetadata" : "false"
+          },
+          "writeOptions" : {
+            "batchSize" : 0,
+            "bulkApi" : "false",
+            "handleDecimalRoundOff" : "false",
+            "handleSpecialChars" : "false",
+            "operations" : [
+              "Insert"
+            ],
+            "setFieldsToNull" : "false",
+            "truncate" : "false",
+            "useErrorFile" : "false",
+            "useExactSrcNames" : "false",
+            "useSuccessFile" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2025-09-15T12:23:09.372Z",
+        "name" : "RecommendedDataMasking",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "InputGroup",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          },
+          {
+            "input" : "false",
+            "name" : "OutputGroup",
+            "output" : "true"
+          }
+        ],
+        "dmoMode" : "SIMPLE",
+        "locale" : "en_US",
+        "maskingEntries" : [
+          {
+            "maskingType" : "Phone",
+            "pcType" : "string",
+            "precision" : "48",
+            "referenceField" : "PHONE",
+            "scale" : "0"
+          }
+        ]
+      },
+      {
+        "createTime" : "2025-09-15T12:23:13.964Z",
+        "name" : "source_CUSTOMERS_MASTER_PLSQL",
+        "advancedProperties" : [
+          {
+            "name" : "Tracing Level",
+            "value" : "Normal"
+          },
+          {
+            "name" : "Output is deterministic",
+            "value" : "false"
+          }
+        ],
+        "groups" : [
+          {
+            "input" : "false",
+            "name" : "DefaultGroup",
+            "output" : "true"
+          }
+        ],
+        "generateFilenamePort" : "false",
+        "useLabels" : "false",
+        "useSequenceFields" : "false",
+        "fields" : [
+          {
+            "adapterField" : {
+              "name" : "CUSTOMER_ID"
+            },
+            "name" : "CUSTOMER_ID",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "MSISDN"
+            },
+            "name" : "MSISDN",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "IMSI"
+            },
+            "name" : "IMSI",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 15,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "IMEI"
+            },
+            "name" : "IMEI",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 18,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ICCID"
+            },
+            "name" : "ICCID",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 20,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "IP_ADDRESS"
+            },
+            "name" : "IP_ADDRESS",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 30,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "FIRST_NAME"
+            },
+            "name" : "FIRST_NAME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 150,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "LAST_NAME"
+            },
+            "name" : "LAST_NAME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 150,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "VERGI_NO"
+            },
+            "name" : "VERGI_NO",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 10,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ADDRESS"
+            },
+            "name" : "ADDRESS",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 768,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "CITY"
+            },
+            "name" : "CITY",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 168,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "ZIP_CODE"
+            },
+            "name" : "ZIP_CODE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 24,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "COUNTRY"
+            },
+            "name" : "COUNTRY",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 168,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PHONE"
+            },
+            "name" : "PHONE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 48,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "EMAIL"
+            },
+            "name" : "EMAIL",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 168,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "STATUS"
+            },
+            "name" : "STATUS",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 24,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PERSONNEL_ID"
+            },
+            "name" : "PERSONNEL_ID",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "CREDIT_CARD"
+            },
+            "name" : "CREDIT_CARD",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 48,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "RECNO"
+            },
+            "name" : "RECNO",
+            "platformType" : {
+              "name" : "double"
+            },
+            "precision" : 15,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "CELL_PHONE"
+            },
+            "name" : "CELL_PHONE",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 16,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "GENDER"
+            },
+            "name" : "GENDER",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 1,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "PERSONNEL_NAME"
+            },
+            "name" : "PERSONNEL_NAME",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 300,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "TCKN"
+            },
+            "name" : "TCKN",
+            "platformType" : {
+              "name" : "decimal"
+            },
+            "precision" : 38,
+            "scale" : 0
+          },
+          {
+            "adapterField" : {
+              "name" : "SMS_TASK"
+            },
+            "name" : "SMS_TASK",
+            "platformType" : {
+              "name" : "string"
+            },
+            "precision" : 2048,
+            "scale" : 0
+          }
+        ],
+        "dataAdapter" : {
+          "connectionId" : "saas:@0Sw3SLh6nUHiF4mwnzFrKS",
+          "connectionName" : "DG_DEMO",
+          "excludeDynamicFileNameField" : "false",
+          "objectType" : "SINGLE",
+          "typeSystem" : "Oracle",
+          "useDynamicFileName" : "false",
+          "object" : {
+            "name" : "CUSTOMERS_MASTER_PLSQL",
+            "label" : "CUSTOMERS_MASTER_PLSQL",
+            "path" : "CUSTOMERS_MASTER_PLSQL",
+            "retainMetadata" : "false",
+            "fields" : [
+              {
+                "name" : "CUSTOMER_ID",
+                "fieldType" : "CONNECTOR",
+                "label" : "CUSTOMER_ID",
+                "nativeName" : "CUSTOMER_ID",
+                "nativeType" : "decimal",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS_MASTER_PLSQL"
+                  }
+                ]
+              },
+              {
+                "name" : "MSISDN",
+                "fieldType" : "CONNECTOR",
+                "label" : "MSISDN",
+                "nativeName" : "MSISDN",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS_MASTER_PLSQL"
+                  }
+                ]
+              },
+              {
+                "name" : "IMSI",
+                "fieldType" : "CONNECTOR",
+                "label" : "IMSI",
+                "nativeName" : "IMSI",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 15,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS_MASTER_PLSQL"
+                  }
+                ]
+              },
+              {
+                "name" : "IMEI",
+                "fieldType" : "CONNECTOR",
+                "label" : "IMEI",
+                "nativeName" : "IMEI",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 18,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS_MASTER_PLSQL"
+                  }
+                ]
+              },
+              {
+                "name" : "ICCID",
+                "fieldType" : "CONNECTOR",
+                "label" : "ICCID",
+                "nativeName" : "ICCID",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 20,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS_MASTER_PLSQL"
+                  }
+                ]
+              },
+              {
+                "name" : "IP_ADDRESS",
+                "fieldType" : "CONNECTOR",
+                "label" : "IP_ADDRESS",
+                "nativeName" : "IP_ADDRESS",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 30,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS_MASTER_PLSQL"
+                  }
+                ]
+              },
+              {
+                "name" : "FIRST_NAME",
+                "fieldType" : "CONNECTOR",
+                "label" : "FIRST_NAME",
+                "nativeName" : "FIRST_NAME",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 150,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS_MASTER_PLSQL"
+                  }
+                ]
+              },
+              {
+                "name" : "LAST_NAME",
+                "fieldType" : "CONNECTOR",
+                "label" : "LAST_NAME",
+                "nativeName" : "LAST_NAME",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 150,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS_MASTER_PLSQL"
+                  }
+                ]
+              },
+              {
+                "name" : "VERGI_NO",
+                "fieldType" : "CONNECTOR",
+                "label" : "VERGI_NO",
+                "nativeName" : "VERGI_NO",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 10,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS_MASTER_PLSQL"
+                  }
+                ]
+              },
+              {
+                "name" : "ADDRESS",
+                "fieldType" : "CONNECTOR",
+                "label" : "ADDRESS",
+                "nativeName" : "ADDRESS",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 768,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS_MASTER_PLSQL"
+                  }
+                ]
+              },
+              {
+                "name" : "CITY",
+                "fieldType" : "CONNECTOR",
+                "label" : "CITY",
+                "nativeName" : "CITY",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 168,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS_MASTER_PLSQL"
+                  }
+                ]
+              },
+              {
+                "name" : "ZIP_CODE",
+                "fieldType" : "CONNECTOR",
+                "label" : "ZIP_CODE",
+                "nativeName" : "ZIP_CODE",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 24,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS_MASTER_PLSQL"
+                  }
+                ]
+              },
+              {
+                "name" : "COUNTRY",
+                "fieldType" : "CONNECTOR",
+                "label" : "COUNTRY",
+                "nativeName" : "COUNTRY",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 168,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS_MASTER_PLSQL"
+                  }
+                ]
+              },
+              {
+                "name" : "PHONE",
+                "fieldType" : "CONNECTOR",
+                "label" : "PHONE",
+                "nativeName" : "PHONE",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 48,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS_MASTER_PLSQL"
+                  }
+                ]
+              },
+              {
+                "name" : "EMAIL",
+                "fieldType" : "CONNECTOR",
+                "label" : "EMAIL",
+                "nativeName" : "EMAIL",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 168,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS_MASTER_PLSQL"
+                  }
+                ]
+              },
+              {
+                "name" : "STATUS",
+                "fieldType" : "CONNECTOR",
+                "label" : "STATUS",
+                "nativeName" : "STATUS",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 24,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS_MASTER_PLSQL"
+                  }
+                ]
+              },
+              {
+                "name" : "PERSONNEL_ID",
+                "fieldType" : "CONNECTOR",
+                "label" : "PERSONNEL_ID",
+                "nativeName" : "PERSONNEL_ID",
+                "nativeType" : "decimal",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS_MASTER_PLSQL"
+                  }
+                ]
+              },
+              {
+                "name" : "CREDIT_CARD",
+                "fieldType" : "CONNECTOR",
+                "label" : "CREDIT_CARD",
+                "nativeName" : "CREDIT_CARD",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 48,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS_MASTER_PLSQL"
+                  }
+                ]
+              },
+              {
+                "name" : "RECNO",
+                "fieldType" : "CONNECTOR",
+                "label" : "RECNO",
+                "nativeName" : "RECNO",
+                "nativeType" : "double",
+                "original" : "false",
+                "precision" : 15,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS_MASTER_PLSQL"
+                  }
+                ]
+              },
+              {
+                "name" : "CELL_PHONE",
+                "fieldType" : "CONNECTOR",
+                "label" : "CELL_PHONE",
+                "nativeName" : "CELL_PHONE",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 16,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS_MASTER_PLSQL"
+                  }
+                ]
+              },
+              {
+                "name" : "GENDER",
+                "fieldType" : "CONNECTOR",
+                "label" : "GENDER",
+                "nativeName" : "GENDER",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 1,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS_MASTER_PLSQL"
+                  }
+                ]
+              },
+              {
+                "name" : "PERSONNEL_NAME",
+                "fieldType" : "CONNECTOR",
+                "label" : "PERSONNEL_NAME",
+                "nativeName" : "PERSONNEL_NAME",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 300,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS_MASTER_PLSQL"
+                  }
+                ]
+              },
+              {
+                "name" : "TCKN",
+                "fieldType" : "CONNECTOR",
+                "label" : "TCKN",
+                "nativeName" : "TCKN",
+                "nativeType" : "decimal",
+                "original" : "false",
+                "precision" : 38,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS_MASTER_PLSQL"
+                  }
+                ]
+              },
+              {
+                "name" : "SMS_TASK",
+                "fieldType" : "CONNECTOR",
+                "label" : "SMS_TASK",
+                "nativeName" : "SMS_TASK",
+                "nativeType" : "nvarchar",
+                "original" : "false",
+                "precision" : 2048,
+                "scale" : 0,
+                "properties" : [
+                  {
+                    "name" : "parentObject",
+                    "value" : "CUSTOMERS_MASTER_PLSQL"
+                  }
+                ]
+              }
+            ]
+          },
+          "readOptions" : {
+            "commandType" : 0,
+            "descending" : "false",
+            "queryAll" : "false",
+            "rowLimit" : 0,
+            "selectDistinct" : "false"
+          }
+        }
+      },
+      {
+        "createTime" : "2025-09-15T12:23:18.199Z",
+        "name" : "joiner_CUSTOMERS_MASTER_PLSQL",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "Master",
+            "output" : "false",
+            "conflictResolutions" : [
+              {
+                "precedingGroupName" : "DefaultGroup",
+                "precedingTxName" : "source_CUSTOMERS_MASTER_PLSQL",
+                "rule" : {
+                  "bulkRename" : "true",
+                  "include" : "true",
+                  "bulkRenameOption" : {
+                    "literal" : "source_CUSTOMERS_MASTER_PLSQL_",
+                    "suffix" : "false"
+                  }
+                }
+              }
+            ],
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          },
+          {
+            "input" : "true",
+            "name" : "Detail",
+            "output" : "false",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          },
+          {
+            "input" : "false",
+            "name" : "OutputGroup",
+            "output" : "true"
+          }
+        ],
+        "joinType" : "Normal Join",
+        "joinConditions" : [
+          {
+            "leftOperand" : "source_CUSTOMERS_MASTER_PLSQL_CUSTOMER_ID",
+            "operator" : "=",
+            "rightOperand" : "CUSTOMER_ID"
+          }
+        ]
+      }
+    ]
+  },
+  "vcsExportTime" : "2025-09-15 21:47:26 TRT"
+}
