@@ -19,8 +19,11 @@
         "groupLink" : "DefaultGroup -> Master"
       },
       {
-        "link" : "RecommendedDataMasking -> Target",
+        "link" : "RecommendedDataMasking -> Expression",
         "groupLink" : "OutputGroup -> DefaultGroup"
+      },
+      {
+        "link" : "Expression -> Target"
       }
     ],
     "transformations" : [
@@ -1577,8 +1580,33 @@
             "rightOperand" : "CUSTOMER_ID"
           }
         ]
+      },
+      {
+        "createTime" : "2025-09-16T12:36:23.218Z",
+        "name" : "Expression",
+        "groups" : [
+          {
+            "input" : "true",
+            "name" : "DefaultGroup",
+            "output" : "true",
+            "rules" : [
+              {
+                "bulkRename" : "false",
+                "include" : "true"
+              }
+            ]
+          }
+        ],
+        "windowConfigurationEnabled" : "false",
+        "windowSpec" : {
+          "allRowsFollowing" : "false",
+          "allRowsPreceding" : "false",
+          "endOffset" : 0,
+          "startOffset" : 0,
+          "partitionKeys" : null
+        }
       }
     ]
   },
-  "vcsExportTime" : "2025-09-16 15:35:27 TRT"
+  "vcsExportTime" : "2025-09-16 15:36:57 TRT"
 }
