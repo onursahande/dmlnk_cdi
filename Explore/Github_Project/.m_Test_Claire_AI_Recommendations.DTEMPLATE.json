@@ -1,7 +1,7 @@
 {
   "objectInfo" : {
     "id" : "fNsOb5wYfmUjQIp0zH7bSl",
-    "name" : "Mapping17 - Copy 1",
+    "name" : "m_Test_Claire_AI_Recommendations",
     "type" : "DTEMPLATE",
     "metadata" : {
       "modelVersion" : {
@@ -23,7 +23,7 @@
     }
   },
   "dataFileExtension" : "zip",
-  "updateTime" : "2025-09-16T12:35:28.021Z",
+  "updateTime" : "2025-09-18T06:49:23.191Z",
   "objectRefs" : [ {
     "id" : "0Sw3SLh6nUHiF4mwnzFrKS",
     "name" : "DG_DEMO",

@@ -3,7 +3,7 @@
     "allowMaxFieldLength" : "false",
     "bigIntConvertType" : "ONLY_BIGINT",
     "documentType" : "MAPPING",
-    "name" : "Mapping17 - Copy 1",
+    "name" : "m_Test_Claire_AI_Recommendations",
     "specialCharacterSupport" : "false",
     "links" : [
       {
@@ -1543,5 +1543,5 @@
       }
     ]
   },
-  "vcsExportTime" : "2025-09-16 15:35:27 TRT"
+  "vcsExportTime" : "2025-09-18 09:49:23 TRT"
 }
