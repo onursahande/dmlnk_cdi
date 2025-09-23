@@ -19,10 +19,7 @@
         "groupLink" : "DefaultGroup -> Master"
       },
       {
-        "link" : "Expression -> Target"
-      },
-      {
-        "link" : "RecommendedDataMasking -> Expression",
+        "link" : "RecommendedDataMasking -> Target",
         "groupLink" : "OutputGroup -> DefaultGroup"
       }
     ],
@@ -1580,46 +1577,8 @@
             "rightOperand" : "CUSTOMER_ID"
           }
         ]
-      },
-      {
-        "createTime" : "2025-09-23T13:27:06.109Z",
-        "name" : "Expression",
-        "groups" : [
-          {
-            "input" : "true",
-            "name" : "DefaultGroup",
-            "output" : "true",
-            "rules" : [
-              {
-                "bulkRename" : "false",
-                "include" : "true"
-              }
-            ]
-          }
-        ],
-        "windowConfigurationEnabled" : "false",
-        "fields" : [
-          {
-            "defaultValue" : "ERROR('transformation error')",
-            "name" : "operation_date",
-            "platformType" : {
-              "name" : "date/time"
-            },
-            "precision" : 29,
-            "scale" : 9,
-            "expFieldType" : "OUTPUT",
-            "expression" : "SYSDATE"
-          }
-        ],
-        "windowSpec" : {
-          "allRowsFollowing" : "false",
-          "allRowsPreceding" : "false",
-          "endOffset" : 0,
-          "startOffset" : 0,
-          "partitionKeys" : null
-        }
       }
     ]
   },
-  "vcsExportTime" : "2025-09-23 16:27:48 TRT"
+  "vcsExportTime" : "2025-09-23 16:43:44 TRT"
 }
