@@ -1,7 +1,7 @@
 {
   "objectInfo" : {
     "id" : "0waOPNUwLnOe3h4Pgspqe0",
-    "name" : "Github_Project",
+    "name" : "Cloud Data Integration Github_Project",
     "type" : "Project",
     "metadata" : {
       "modelVersion" : {
@@ -18,7 +18,7 @@
     }
   },
   "dataFileExtension" : "json",
-  "updateTime" : "2025-09-18T07:34:35.717Z",
+  "updateTime" : "2025-09-23T06:27:01.015Z",
   "objectRefs" : [ ],
   "readableFileExtension" : null,
   "readableFilePresent" : false
