@@ -1582,8 +1582,7 @@
         ]
       },
       {
-        "description" : "test",
-        "createTime" : "2025-09-23T06:29:20.885Z",
+        "createTime" : "2025-09-23T13:27:06.109Z",
         "name" : "Expression",
         "groups" : [
           {
@@ -1599,6 +1598,19 @@
           }
         ],
         "windowConfigurationEnabled" : "false",
+        "fields" : [
+          {
+            "defaultValue" : "ERROR('transformation error')",
+            "name" : "operation_date",
+            "platformType" : {
+              "name" : "date/time"
+            },
+            "precision" : 29,
+            "scale" : 9,
+            "expFieldType" : "OUTPUT",
+            "expression" : "SYSDATE"
+          }
+        ],
         "windowSpec" : {
           "allRowsFollowing" : "false",
           "allRowsPreceding" : "false",
@@ -1609,5 +1621,5 @@
       }
     ]
   },
-  "vcsExportTime" : "2025-09-23 09:30:41 TRT"
+  "vcsExportTime" : "2025-09-23 16:27:48 TRT"
 }
