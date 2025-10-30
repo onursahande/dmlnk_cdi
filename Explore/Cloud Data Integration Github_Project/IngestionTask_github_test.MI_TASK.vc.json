@@ -10,16 +10,19 @@
   "targetConnection" : {
     "type" : "local"
   },
-  "lastModified" : 1761818214000,
+  "lastModified" : 1761818451000,
   "sourceOptions" : {
     "filePatternFilter" : "true",
-    "src.file.pattern" : "*",
+    "src.file.pattern" : "*.txt",
     "src.file.delete" : "KEEP",
     "src.download.path" : "D:\\IngestionSourceFolder",
     "filePickupOption" : "PATTERN",
+    "srcPushdownCopy" : "false",
+    "stabilityCheckInterval" : "10",
     "src.file.pattern.type" : "WILDCARD",
-    "batchSize" : "5",
-    "fileStability" : "false"
+    "batchSize" : "4",
+    "src.file.deduplicate" : "true",
+    "fileStability" : "true"
   },
   "targetOptions" : {
     "fileExistsAction" : "OVERWRITE",
@@ -30,8 +33,8 @@
   "threadCount" : 1,
   "logLevel" : "NORMAL",
   "allowConcurrency" : false,
+  "identifier" : "58400",
   "fileListenerAsSource" : false,
   "fileListenerAsTrigger" : false,
-  "identifier" : "58400",
-  "vcsExportTime" : "2025-10-30 12:57:46 TRT"
+  "vcsExportTime" : "2025-10-30 13:01:22 TRT"
 }
