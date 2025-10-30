@@ -1,0 +1,37 @@
+{
+  "orgId" : "8ggJHvks0yUfb0G3pPKVke",
+  "icsGuid" : "2UcLjK7lsYYkVqOOmT6jUi",
+  "name" : "IngestionTask_github_test",
+  "id" : 58400,
+  "sourceType" : "CONNECTION",
+  "sourceConnection" : {
+    "type" : "local"
+  },
+  "targetConnection" : {
+    "type" : "local"
+  },
+  "lastModified" : 1761818214000,
+  "sourceOptions" : {
+    "filePatternFilter" : "true",
+    "src.file.pattern" : "*",
+    "src.file.delete" : "KEEP",
+    "src.download.path" : "D:\\IngestionSourceFolder",
+    "filePickupOption" : "PATTERN",
+    "src.file.pattern.type" : "WILDCARD",
+    "batchSize" : "5",
+    "fileStability" : "false"
+  },
+  "targetOptions" : {
+    "fileExistsAction" : "OVERWRITE",
+    "tgt.download.path" : "D:\\IngestionTargetFolder"
+  },
+  "agentGroup" : "012BWY25000000000002",
+  "filePickupOption" : "PATTERN",
+  "threadCount" : 1,
+  "logLevel" : "NORMAL",
+  "allowConcurrency" : false,
+  "fileListenerAsSource" : false,
+  "fileListenerAsTrigger" : false,
+  "identifier" : "58400",
+  "vcsExportTime" : "2025-10-30 12:57:46 TRT"
+}
